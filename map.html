@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Ehab Ebeid, Il Campidolgio Project for ARCH 3823 -->
+<!-- Professor Jeffrey Blanchard -->
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+     
+  <title>Michelangelo's Campidoglio | Map</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+     
+  <!-- scripts -->
+  <script src="js/script.js" ></script>
+  <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+     
+ </head>
+    
+ <body onload="init()">
+     <!-- Navbar -->
+     <div class="w3-top">
+       <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+         <a href="intro.html" class="w3-bar-item w3-button w3-theme-l1">MICHELANGELO'S CAMPIDOGLIO</a>
+         <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+         <a href="biblio.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Bibliography</a>
+       </div>
+     </div>
+     
+     <!-- Sidebar -->
+     <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+       </a>
+       <h4 class="w3-bar-item"><b>Menu</b></h4>
+       <a class="w3-bar-item w3-button w3-hover-black" href="intro.html">Introduction</a>
+       <a class="w3-bar-item w3-button">Interactive Map</a>
+        <div class="dropdown">
+          <button onclick="dropdown()" class="dropbtn">Change Basemap</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="bmapf(this.id)" class="bmoption" id="FU" href="#">Forma Urbis Plates (Lanciani)</a>
+            <a onclick="bmapf(this.id)" class="bmoption" id="Platner" href="#">Ancient Hill (Platner)</a>
+            <a onclick="bmapf(this.id)" class="bmoption" id="OSM" href="#">Open Street Maps</a>
+            <a onclick="bmapf(this.id)" class="bmoption" id="GES" href="#">Google Earth</a>
+            <a onclick="bmapf(this.id)" class="bmoption" id="GE3D" href="#">Google Earth (Enhanced)</a>
+          </div>
+        </div>
+     </nav>
+     
+     <div id="canvascontainer">
+       <canvas id="canvas" width="960" height="640"></canvas>
+       <img alt="Google Earth Enhanced Satellite Imagery " id="GE3D" style="display: none" src="images/GES.png" />
+       <img alt="Google Earth Satellite Imagery" id="GES" style="display: none" src="images/GE3D.png" />
+       <img alt="Open Street Maps" id="OSM" style="display: none" src="images/OSM.png" />
+       <img alt="Samuel Ball Platner's Ancient Capitoline map in 'A Topographical Dictionary of Ancient Rome', 1929" id="Platner" style="display: none" src="images/Platner.png" />
+       <img alt="Forma Urbis Plates" id="FU" style="display: none" src="images/FU.png" />
+       <canvas id="legend" width="342" height="640"></canvas>
+     </div>
+     
+<footer id="myFooter">
+
+<div class="footer">
+  <p>Ehab Ebeid // ARCH 3823 / Prof. Jeffrey Blanchard / Cornell in Rome / Spring 2017</p>
+</div>
+</footer>
+     
+ </body>
+
+
+    
+</html>
