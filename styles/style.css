@@ -42,10 +42,12 @@ h1 {
 .current {
     font-weight: 800;
     background-color: white;
-    color: black;
+    color: black;    
+}
+
+.w3-sidebar .current {
     border-left-style: solid !important;
     border-left-width: 3px !important;
-    
 }
 
 .struc {
@@ -60,7 +62,7 @@ h1 {
 }
 
 #side {
-    margin-top: 6em;
+    margin-top: 3em;
     margin-bottom: 3em;
     float: right;
     position: absolute;
