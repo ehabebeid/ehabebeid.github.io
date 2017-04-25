@@ -2,13 +2,37 @@ html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto", sans-serif
 }
 
+.bibliotext p {
+    padding-left: 6em;
+    text-indent: -4em;
+}
+
+#patternimage {
+    border: none !important;
+}
+
+.bilbiotext p:first-of-type {
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic, .attrib {
+    font-style: italic;
+}
+
 .w3-bar > img {
     float: left;
     position: absolute;
+    max-height: 80%;
+    margin-left: 5px;
+    margin-top: 4px;
 }
 
 .w3-bar > .first {
-    padding-left: 2em;
+    padding-left: 2.5em;
 }
 
 h1 {
@@ -16,8 +40,12 @@ h1 {
 }
 
 .current {
-    text-decoration: underline;
     font-weight: 800;
+    background-color: white;
+    color: black;
+    border-left-style: solid !important;
+    border-left-width: 3px !important;
+    
 }
 
 .struc {
@@ -32,7 +60,7 @@ h1 {
 }
 
 #side {
-    margin-top: 7em;
+    margin-top: 6em;
     margin-bottom: 3em;
     float: right;
     position: absolute;
@@ -41,35 +69,40 @@ h1 {
     display: block;
 }
 
-#side > .caption {
-    text-align: center;
-    margin: 10px;
+
+#side .caption, figcaption {
+    width: 80%;
+    margin-left: 3em;
+    font-size: 12px;
 }
 
-#side > .figure {
+#side .figure {
+    margin-bottom: 25px;
+}
+
+#side img {
     border-style: solid;
     border-width: 5px;
     border-color: crimson;
-    padding: 10px;
-    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-content: center;
 }
 
 img {
-    max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    padding: 10px;
+    max-width: 100%;
 }
 
-#container > #text {
+#container #text {
     float: left;
     display: block;
     width: 60%;
     margin-left: 30px;
     margin-top: 30px;
     margin-right: 30px;
+    margin-bottom: 60px;
 }
 
 #canvascontainer, #container {
