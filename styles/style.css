@@ -1,6 +1,75 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-#canvascontainer {
+.w3-bar > img {
+    float: left;
+    position: absolute;
+}
+
+.w3-bar > .first {
+    padding-left: 2em;
+}
+
+h1 {
+    color: crimson;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.struc {
+    margin-left: 1.5em;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.struc > a {
+    font-size: 13px;
+    padding: 1px;
+}
+
+#side {
+    margin-top: 7em;
+    margin-bottom: 3em;
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 33%;
+    display: block;
+}
+
+#side > .caption {
+    text-align: center;
+    margin: 10px;
+}
+
+#side > .figure {
+    border-style: solid;
+    border-width: 5px;
+    border-color: crimson;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    padding: 10px;
+}
+
+#container > #text {
+    float: left;
+    display: block;
+    width: 60%;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#canvascontainer, #container {
     padding-top: 45px!important;
     margin-left: 153px;
 }
@@ -9,7 +78,7 @@ footer {
     width:100%;
     height: 45px;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     background-color: #444444;
 }
 
@@ -27,7 +96,7 @@ nav {
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 8px;
+    padding: 12px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -53,7 +122,7 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* Links inside the dropdown */
