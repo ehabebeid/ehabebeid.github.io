@@ -38,7 +38,7 @@ function drawbm() {
         var imagevars;
         imagevars[i] = new Image();
         image = imagevars[i];
-        image.src = 'images/' + imagenames[i] + '.png';
+        image.src = 'images/' + imagenames[i] + '.jpg';
         image.onload = loadbitmap(image, imagenames[i]);
     }
 
