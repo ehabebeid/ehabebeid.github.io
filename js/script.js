@@ -195,6 +195,7 @@ function drawstruc() {
         });
     
     stage.addChild(basemaps);
+    structures.cursor = "pointer";
     stage.addChild(structures);
     stage.addChild(leg);
     stage.update();
